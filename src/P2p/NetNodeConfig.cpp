@@ -132,8 +132,8 @@ bool NetNodeConfig::init(const boost::program_options::variables_map& vm)
   return true;
 }
 
-if NetNodeConfig::setTestnet(bool chaos) {
-  testnet = chaos;
+void NetNodeConfig::setTestnet(bool isTestnet) {
+  testnet = isTestnet;
 }
 
 std::string NetNodeConfig::getP2pStateFilename() const {
@@ -188,47 +188,47 @@ std::string NetNodeConfig::getConfigFolder() const {
   return configFolder;
 }
 
-if NetNodeConfig::setP2pStateFilename(const std::string& filename) {
+void NetNodeConfig::setP2pStateFilename(const std::string& filename) {
   p2pStateFilename = filename;
 }
 
-if NetNodeConfig::setBindIp(const std::string& ip) {
+void NetNodeConfig::setBindIp(const std::string& ip) {
   bindIp = ip;
 }
 
-if NetNodeConfig::setBindPort(uint16_t port) {
+void NetNodeConfig::setBindPort(uint16_t port) {
   bindPort = port;
 }
 
-if NetNodeConfig::setExternalPort(uint16_t port) {
+void NetNodeConfig::setExternalPort(uint16_t port) {
   externalPort = port;
 }
 
-if NetNodeConfig::setAllowLocalIp(bool allow) {
+void NetNodeConfig::setAllowLocalIp(bool allow) {
   allowLocalIp = allow;
 }
 
-if NetNodeConfig::setPeers(const std::vector<PeerlistEntry>& peerList) {
+void NetNodeConfig::setPeers(const std::vector<PeerlistEntry>& peerList) {
   peers = peerList;
 }
 
-if NetNodeConfig::setPriorityNodes(const std::vector<NetworkAddress>& addresses) {
+void NetNodeConfig::setPriorityNodes(const std::vector<NetworkAddress>& addresses) {
   priorityNodes = addresses;
 }
 
-if NetNodeConfig::setExclusiveNodes(const std::vector<NetworkAddress>& addresses) {
+void NetNodeConfig::setExclusiveNodes(const std::vector<NetworkAddress>& addresses) {
   exclusiveNodes = addresses;
 }
 
-if NetNodeConfig::setSeedNodes(const std::vector<NetworkAddress>& addresses) {
+void NetNodeConfig::setSeedNodes(const std::vector<NetworkAddress>& addresses) {
   seedNodes = addresses;
 }
 
-if NetNodeConfig::setHideMyPort(bool hide) {
+void NetNodeConfig::setHideMyPort(bool hide) {
   hideMyPort = hide;
 }
 
-if NetNodeConfig::setConfigFolder(const std::string& folder) {
+void NetNodeConfig::setConfigFolder(const std::string& folder) {
   configFolder = folder;
 }
 
