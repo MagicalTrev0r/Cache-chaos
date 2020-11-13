@@ -40,9 +40,14 @@ namespace CryptoNote {
     const uint64_t MINIMUM_FEE_V1_HEIGHT = 9338;
 
     /* Fee adjustment V2 */
-    const uint64_t MINIMUM_FEE_V2 = UINT64_C(0);
+    const uint64_t MINIMUM_FEE_V2= UINT64_C(0);
 
-    const uint64_t MINIMUM_FEE_V2_HEIGHT = 9777;
+    const uint64_t MINIMUM_FEE_V2_HEIGHT = 9777;    
+    
+    /* Fee adjustment V3 */
+    const uint64_t MINIMUM_FEE_V3 = UINT64_C(1);
+
+    const uint64_t MINIMUM_FEE_V3_HEIGHT = 23000;
 
     /* during mainnet, we'll change min_mix to 0 and default to 5 */
     const uint16_t MINIMUM_MIXIN = 4;
