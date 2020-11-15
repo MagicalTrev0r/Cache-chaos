@@ -118,10 +118,10 @@ namespace CryptoNote {
 
 	const char     GENESIS_COINBASE_TX_HEX[] = "010a01ff0001c096b102029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121017d6775185749e95ac2d70cae3f29e0e46f430ab648abbe9fdc61d8e7437c60f8";
 	const uint32_t GENESIS_NONCE = 10000;
-	const uint64_t GENESIS_TIMESTAMP = 1527078920;
+	const uint64_t GENESIS_TIMESTAMP = 1605434400;
 
-	const int      P2P_DEFAULT_PORT = 39999;
-	const int      RPC_DEFAULT_PORT = 40000;
+	const int      P2P_DEFAULT_PORT = 38999;
+	const int      RPC_DEFAULT_PORT = 39000;
 
 	const uint8_t  P2P_CURRENT_VERSION = 1;
 	const uint8_t  P2P_MINIMUM_VERSION = 1;
